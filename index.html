@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Камень, Ножницы, Бумага</title>
+</head>
+<body>
+  <div class="app">
+    <h1 class="winner"></h1>
+    <div class="ttt">
+      <div class="cubes">
+        <div class="cube" style="border-left: none;border-top: none;"></div>
+        <div class="cube" style="border-left: none;border-top: none;"></div>
+        <div class="cube" style="border-left: none;border-right: none;border-top: none;"></div>
+      </div>
+      <div class="cubes">
+        <div class="cube" style="border-left: none;border-top: none;"></div>
+        <div class="cube" style="border: none;border-bottom: 1px solid black;"></div>
+        <div class="cube" style="border-right: none;border-top: none;"></div>
+      </div>
+      <div class="cubes">
+        <div class="cube" style="border-left: none;border-top: none; border-bottom: none;"></div>
+        <div class="cube" style="border-left: none; border-bottom: none; border-top: none;"></div>
+        <div class="cube" style="border: none;"></div>
+      </div>
+    </div>
+    <button class="clear-button">Очистить</button>
+    <div class="help-radio">
+      <p>Против компьютера: </p>
+      <button class="switcher"><div class="ball"></button></div>
+    </div>
+  </div>
+</body>
+<script src="index.js"></script>
+</html>

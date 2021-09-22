@@ -1,0 +1,105 @@
+html {
+  overflow: hidden;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cubes {
+  display: flex;
+}
+.cube {
+  width: 100px;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 50px;
+
+  border: 1px solid black;
+
+  cursor: pointer;
+}
+.cube.cross, .cube.circle {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+.cube.cross {
+  background-image: url("./cross.svg");
+}
+.cube.circle {
+  background-image: url("./circle.svg");
+}
+.cube.game-finished {
+  cursor: default;
+}
+
+
+.clear-button {
+  margin: 30px 0 15px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+
+.help-radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: .2s ease-in-out;
+}
+.help-radio p {
+  margin: 10px 0;
+
+  font-size: 18px;
+}
+.switcher {
+  margin: 0 10px;
+
+  background-color: white;
+  border: 1px solid #999;
+  border-radius: 15px;
+
+  cursor: pointer;
+
+  transition: .2s ease-in-out;
+}
+.switcher .ball {
+  width: 15px;
+  height: 15px;
+  margin: 2px 23px 2px -2px;
+
+  background-color: rgba(0, 0, 0, 0.411);
+  border-radius: 20px;
+
+  transition: .2s ease-in-out;
+}
+.switcher.active {
+  border: 1px solid #614dff;
+}
+.switcher.active .ball {
+  margin: 2px -2px 2px 23px;
+  background-color: #614dff;
+}
