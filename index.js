@@ -35,6 +35,8 @@ function checkWinning(movemaker) {
 }
 
 function finishGame(movemaker) {
+  FLAG_cross = true
+
   document
     .querySelector(".winner")
     .textContent = "Победа " + ({"cross": "крестиков", "circle": "ноликов"})[movemaker]
