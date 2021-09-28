@@ -6,12 +6,12 @@ const map = []
 
 
 
-document
-  .querySelector(".switcher")
-  .addEventListener(
-    "click",
-    ({ currentTarget }) => (currentTarget.classList.toggle("active"), FLAG_pvp = !FLAG_pvp)
-  )
+// document
+//   .querySelector(".switcher")
+//   .addEventListener(
+//     "click",
+//     ({ currentTarget }) => (currentTarget.classList.toggle("active"), FLAG_pvp = !FLAG_pvp)
+//   )
 
 
 
